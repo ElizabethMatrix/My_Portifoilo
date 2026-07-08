@@ -1,0 +1,420 @@
+/*=========================================
+        GOOGLE FONT
+=========================================*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/*=========================================
+            RESET
+=========================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#F5F7FB;
+    color:#1e3b2b;
+    line-height:1.8;
+}
+
+/*=========================================
+            LINKS
+=========================================*/
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+ul{
+    list-style:none;
+}
+
+/*=========================================
+            HEADER
+=========================================*/
+
+header{
+
+    width:100%;
+
+    background:linear-gradient(135deg,#0F172A,#1e8a2c);
+
+    color:white;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 8%;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
+
+}
+
+.logo h2{
+
+    font-size:30px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+}
+
+/*=========================================
+            NAVIGATION
+=========================================*/
+
+nav ul{
+
+    display:flex;
+
+    gap:35px;
+
+}
+
+nav ul li a{
+
+    font-size:17px;
+
+    font-weight:500;
+
+    color:rgb(236, 233, 233);
+
+    transition:.3s;
+
+    position:relative;
+
+}
+
+nav ul li a::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:0;
+
+    height:3px;
+
+    background:#0c8808;
+
+    left:0;
+
+    bottom:-8px;
+
+    transition:.3s;
+
+}
+
+nav ul li a:hover::after{
+
+    width:100%;
+
+}
+
+nav ul li a:hover{
+
+    color:#a1da98;
+
+}
+
+/*=========================================
+            HERO
+=========================================*/
+
+.hero{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:70px auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+
+    gap:50px;
+
+    align-items:center;
+
+}
+
+.hero-text h1{
+
+    font-size:55px;
+
+    margin-bottom:20px;
+
+    color:#0F172A;
+
+}
+
+.hero-text span{
+
+    color:#0c8808;
+
+}
+
+.hero-text h3{
+
+    color:#64748B;
+
+    margin-bottom:20px;
+
+}
+
+.hero-text p{
+
+    margin-bottom:30px;
+
+    color:#475569;
+
+}
+
+.hero-image{
+
+    text-align:center;
+
+}
+
+.hero-image img{
+
+    width:320px;
+
+    height:320px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:8px solid white;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.15);
+
+}
+
+/*=========================================
+            BUTTONS
+=========================================*/
+
+.btn{
+
+    display:inline-block;
+
+    background:#0c8808;
+
+    color:white;
+
+    padding:14px 28px;
+
+    border-radius:8px;
+
+    margin-right:15px;
+
+    transition:.3s;
+
+    font-weight:600;
+
+}
+
+.btn:hover{
+
+    background:#0c8808;
+
+    transform:translateY(-3px);
+
+}
+
+.btn-secondary{
+
+    display:inline-block;
+
+    border:2px solid #0c8808;
+
+    color:#0c8808;
+
+    padding:14px 28px;
+
+    border-radius:8px;
+
+    transition:.3s;
+
+    font-weight:600;
+
+}
+
+.btn-secondary:hover{
+
+    background:#0c8808;
+
+    color:white;
+
+}
+
+/*=========================================
+        PAGE TITLE
+=========================================*/
+
+.page-title{
+
+    text-align:center;
+
+    padding:70px 20px;
+
+}
+
+.page-title h1{
+
+    font-size:45px;
+
+    color:#0F172A;
+
+    margin-bottom:15px;
+
+}
+
+.page-title p{
+
+    color:#64748B;
+
+}
+
+/*=========================================
+            SECTIONS
+=========================================*/
+
+section{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:40px auto;
+
+}
+
+section h2{
+
+    color:#0F172A;
+
+    margin-bottom:20px;
+
+}
+
+/*=========================================
+        HOME OVERVIEW
+=========================================*/
+
+.overview{
+
+    text-align:center;
+
+}
+
+.overview p{
+
+    max-width:800px;
+
+    margin:auto;
+
+    color:#475569;
+
+}
+
+
+
+    .results-container{
+        width:95%;
+        max-width:1400px;
+        margin:auto;
+    }
+
+    .semester-header{
+        background:linear-gradient(135deg,#1b5e20,#2e7d32);
+        color:white;
+        padding:15px;
+        text-align:center;
+        font-size:1.4rem;
+        font-weight:bold;
+        border-radius:10px 10px 0 0;
+    }
+
+    table{
+        width:100%;
+        border-collapse:collapse;
+        background:white;
+        margin-bottom:40px;
+        box-shadow:0 4px 15px rgba(0,0,0,0.1);
+        overflow:hidden;
+    }
+
+    thead{
+        background:#388e3c;
+        color:white;
+    }
+
+    th{
+        padding:15px;
+        text-align:left;
+        font-weight:600;
+    }
+
+    td{
+        padding:14px;
+        border-bottom:1px solid #dcedc8;
+    }
+
+    tbody tr:nth-child(even){
+        background:#f1f8e9;
+    }
+
+    tbody tr:hover{
+        background:#dcedc8;
+        transition:0.3s;
+    }
+
+    .grade-a{
+        color:#1b5e20;
+        font-weight:bold;
+    }
+
+    .summary{
+        background:#e8f5e9;
+        padding:15px;
+        border-left:6px solid #2e7d32;
+        margin-top:-25px;
+        margin-bottom:40px;
+        border-radius:5px;
+    }
+
+    .summary strong{
+        color:#1b5e20;
+    }
+
+    @media(max-width:768px){
+        table{
+            display:block;
+            overflow-x:auto;
+        }
+    }
+
+
+            
