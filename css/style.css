@@ -409,12 +409,17 @@ section h2{
         color:#1b5e20;
     }
 
+
     @media(max-width:768px){
         table{
             display:block;
             overflow-x:auto;
         }
+
+      
     }
+
+
 
     @media screen and (max-width: 768px){
 
@@ -466,6 +471,16 @@ section h2{
         margin:10px 0;
         text-align:center;
     }
+
+    .projects-grid{
+    grid-template-columns:1fr;
+}
+
+.project-card img{
+    width:100%;
+    height:auto;
+}
+
 }
 
             
