@@ -149,7 +149,7 @@ nav ul li a:hover{
 
     display:grid;
 
-    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 
     gap:50px;
 
@@ -159,7 +159,7 @@ nav ul li a:hover{
 
 .hero-text h1{
 
-    font-size:55px;
+     font-size:clamp(2.5rem, 8vw, 55px);
 
     margin-bottom:20px;
 
@@ -416,5 +416,56 @@ section h2{
         }
     }
 
+    @media screen and (max-width: 768px){
+
+    header{
+        flex-direction: column;
+        padding: 15px;
+        text-align: center;
+    }
+
+    nav ul{
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .logo h2{
+        font-size: 24px;
+    }
+
+    .hero{
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .hero-text h1{
+        font-size: 40px;
+        line-height: 1.2;
+    }
+
+    .hero-text h3{
+        font-size: 20px;
+    }
+
+    .hero-image img{
+        width: 220px;
+        height: 220px;
+    }
+
+    .page-title h1{
+        font-size: 32px;
+    }
+
+    .btn,
+    .btn-secondary{
+        display:block;
+        width:100%;
+        margin:10px 0;
+        text-align:center;
+    }
+}
 
             
